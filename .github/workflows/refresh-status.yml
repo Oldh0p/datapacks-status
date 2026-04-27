@@ -17,27 +17,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build live.json from packs.json
+      - name: Build live.json — only approved packs
         run: |
           mkdir -p data
           python3 - <<'EOF'
           import json
+          import urllib.request
           from datetime import datetime, timezone
+
+          UA = "datapacks-status-action/1.0 (extamorzen@gmail.com)"
 
           with open("packs.json") as f:
               source = json.load(f)
 
           out = {
               "lastUpdated": datetime.now(timezone.utc).isoformat(),
-              "packs": [
-                  {
-                      "slug": p["slug"],
-                      "title": p["title"],
-                      "username": p["username"]
-                  }
-                  for p in source["packs"]
-              ]
+              "packs": []
           }
+
+          for entry in source["packs"]:
+              slug = entry["slug"]
+              try:
+                  req = urllib.request.Request(
+                      f"https://api.modrinth.com/v2/project/{slug}",
+                      headers={"User-Agent": UA}
+                  )
+                  with urllib.request.urlopen(req, timeout=15) as r:
+                      data = json.load(r)
+                  if data.get("status") == "approved":
+                      out["packs"].append({
+                          "slug": slug,
+                          "title": entry.get("title") or data.get("title") or slug,
+                          "username": entry["username"]
+                      })
+              except Exception:
+                  # 404 = pack pas encore approuvé, on l'ignore
+                  pass
 
           with open("data/live.json", "w") as f:
               json.dump(out, f, indent=2, ensure_ascii=False)
