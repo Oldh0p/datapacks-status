@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T18:02:01.075960+00:00",
+  "lastUpdated": "2026-04-27T18:12:31.784295+00:00",
   "packs": [
     {
       "slug": "break-it-down",
@@ -24,11 +24,6 @@
     {
       "slug": "mob-drops-rebalance-dp",
       "title": "Mob Drops Rebalance",
-      "username": "Oldhop"
-    },
-    {
-      "slug": "lanterns-from-torches",
-      "title": "lanterns-from-torches",
       "username": "Oldhop"
     },
     {
@@ -62,11 +57,6 @@
       "username": "PixelForged"
     },
     {
-      "slug": "horse-armor-recipes",
-      "title": "horse-armor-recipes",
-      "username": "PixelForged"
-    },
-    {
       "slug": "bundle-upgrade-dp",
       "title": "Bundle Upgrade",
       "username": "PixelForged"
@@ -90,16 +80,6 @@
       "slug": "prismarine-pack-dp",
       "title": "Prismarine Pack",
       "username": "KiraVoxel"
-    },
-    {
-      "slug": "diamond-apple-dp",
-      "title": "diamond-apple-dp",
-      "username": "extamorzen"
-    },
-    {
-      "slug": "sponge-recipe-dp",
-      "title": "sponge-recipe-dp",
-      "username": "extamorzen"
     }
   ]
 }
