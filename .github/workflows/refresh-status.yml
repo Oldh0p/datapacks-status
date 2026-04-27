@@ -2,11 +2,11 @@ name: Refresh Modrinth Status
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Toutes les heures pile
-  workflow_dispatch:        # Permet de lancer à la main aussi
+    - cron: "0 * * * *"
+  workflow_dispatch:
   push:
     paths:
-      - "packs.json"        # Refresh aussi quand on ajoute un pack
+      - "packs.json"
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch Modrinth data and build live.json
+      - name: Build live.json (slug + title + username only)
         run: |
           mkdir -p data
           python3 - <<'EOF'
@@ -32,13 +32,13 @@ jobs:
 
           out = {
               "lastUpdated": datetime.now(timezone.utc).isoformat(),
-              "totalPacks": len(source["packs"]),
               "packs": []
           }
 
           for entry in source["packs"]:
               slug = entry["slug"]
               username = entry["username"]
+              title = slug
               try:
                   req = urllib.request.Request(
                       f"https://api.modrinth.com/v2/project/{slug}",
@@ -46,31 +46,15 @@ jobs:
                   )
                   with urllib.request.urlopen(req, timeout=15) as r:
                       data = json.load(r)
+                  title = data.get("title") or slug
+              except Exception:
+                  pass
 
-                  out["packs"].append({
-                      "slug": data.get("slug"),
-                      "title": data.get("title"),
-                      "username": username,
-                      "description": data.get("description"),
-                      "iconUrl": data.get("icon_url"),
-                      "status": data.get("status"),
-                      "downloads": data.get("downloads", 0),
-                      "followers": data.get("followers", 0),
-                      "categories": data.get("categories", []),
-                      "license": (data.get("license") or {}).get("id"),
-                      "published": data.get("published"),
-                      "approved": data.get("approved"),
-                      "updated": data.get("updated"),
-                      "url": f"https://modrinth.com/datapack/{slug}"
-                  })
-              except Exception as e:
-                  out["packs"].append({
-                      "slug": slug,
-                      "username": username,
-                      "status": "error",
-                      "error": str(e),
-                      "url": f"https://modrinth.com/datapack/{slug}"
-                  })
+              out["packs"].append({
+                  "slug": slug,
+                  "title": title,
+                  "username": username
+              })
 
           with open("data/live.json", "w") as f:
               json.dump(out, f, indent=2, ensure_ascii=False)
@@ -84,6 +68,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: refresh Modrinth status [$(date -u +'%Y-%m-%dT%H:%MZ')]"
+            git commit -m "chore: refresh status [$(date -u +'%Y-%m-%dT%H:%MZ')]"
             git push
           fi
