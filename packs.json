@@ -22,6 +22,8 @@
     { "slug": "diamond-apple-dp",         "title": "Diamond Apple",            "username": "extamorzen" },
     { "slug": "sponge-recipe-dp",         "title": "Sponge Recipe",            "username": "extamorzen" },
     { "slug": "better-fishing-dp",        "title": "Better Fishing",           "username": "Zephyros" },
-    { "slug": "coal-compressor-dp",       "title": "Coal Compressor",          "username": "Zephyros" }
+    { "slug": "coal-compressor-dp",       "title": "Coal Compressor",          "username": "Zephyros" },
+    { "slug": "stick-multiplier-dp",      "title": "Stick Multiplier",         "username": "antonio75" },
+    { "slug": "endermen-pick-anything-dp","title": "Endermen Pick Anything",   "username": "antonio75" }
   ]
 }
