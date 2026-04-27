@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "packs": [
+    { "slug": "break-it-down", "username": "Oldhop" },
+    { "slug": "quiet-endermen", "username": "Oldhop" },
+    { "slug": "elytra-recipe-dp", "username": "Oldhop" },
+    { "slug": "craftable-cobweb-dp", "username": "Oldhop" },
+    { "slug": "mob-drops-rebalance-dp", "username": "Oldhop" },
+    { "slug": "lanterns-from-torches", "username": "Oldhop" },
+    { "slug": "classic-enchanted-apples", "username": "NexaCraft" },
+    { "slug": "saddlecraft", "username": "NexaCraft" },
+    { "slug": "silk-spawners-dp", "username": "NexaCraft" },
+    { "slug": "copper-exchange-dp", "username": "NexaCraft" },
+    { "slug": "froglight-crafting-dp", "username": "NexaCraft" },
+    { "slug": "name-tag-recipe-dp", "username": "PixelForged" },
+    { "slug": "horse-armor-recipes", "username": "PixelForged" },
+    { "slug": "bundle-upgrade-dp", "username": "PixelForged" },
+    { "slug": "craftable-glow-sac", "username": "PixelForged" },
+    { "slug": "chainmail-recipes", "username": "KiraVoxel" },
+    { "slug": "decorative-end-rods", "username": "KiraVoxel" },
+    { "slug": "prismarine-pack-dp", "username": "KiraVoxel" },
+    { "slug": "diamond-apple-dp", "username": "extamorzen" },
+    { "slug": "sponge-recipe-dp", "username": "extamorzen" }
+  ]
+}

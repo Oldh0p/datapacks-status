@@ -1,0 +1,89 @@
+name: Refresh Modrinth Status
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # Toutes les heures pile
+  workflow_dispatch:        # Permet de lancer à la main aussi
+  push:
+    paths:
+      - "packs.json"        # Refresh aussi quand on ajoute un pack
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Modrinth data and build live.json
+        run: |
+          mkdir -p data
+          python3 - <<'EOF'
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          UA = "datapacks-status-action/1.0 (extamorzen@gmail.com)"
+
+          with open("packs.json") as f:
+              source = json.load(f)
+
+          out = {
+              "lastUpdated": datetime.now(timezone.utc).isoformat(),
+              "totalPacks": len(source["packs"]),
+              "packs": []
+          }
+
+          for entry in source["packs"]:
+              slug = entry["slug"]
+              username = entry["username"]
+              try:
+                  req = urllib.request.Request(
+                      f"https://api.modrinth.com/v2/project/{slug}",
+                      headers={"User-Agent": UA}
+                  )
+                  with urllib.request.urlopen(req, timeout=15) as r:
+                      data = json.load(r)
+
+                  out["packs"].append({
+                      "slug": data.get("slug"),
+                      "title": data.get("title"),
+                      "username": username,
+                      "description": data.get("description"),
+                      "iconUrl": data.get("icon_url"),
+                      "status": data.get("status"),
+                      "downloads": data.get("downloads", 0),
+                      "followers": data.get("followers", 0),
+                      "categories": data.get("categories", []),
+                      "license": (data.get("license") or {}).get("id"),
+                      "published": data.get("published"),
+                      "approved": data.get("approved"),
+                      "updated": data.get("updated"),
+                      "url": f"https://modrinth.com/datapack/{slug}"
+                  })
+              except Exception as e:
+                  out["packs"].append({
+                      "slug": slug,
+                      "username": username,
+                      "status": "error",
+                      "error": str(e),
+                      "url": f"https://modrinth.com/datapack/{slug}"
+                  })
+
+          with open("data/live.json", "w") as f:
+              json.dump(out, f, indent=2, ensure_ascii=False)
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh Modrinth status [$(date -u +'%Y-%m-%dT%H:%MZ')]"
+            git push
+          fi
