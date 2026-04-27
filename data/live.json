@@ -1,337 +1,105 @@
 {
-  "lastUpdated": "2026-04-27T17:54:20.926627+00:00",
-  "totalPacks": 20,
+  "lastUpdated": "2026-04-27T18:02:01.075960+00:00",
   "packs": [
     {
       "slug": "break-it-down",
       "title": "Break It Down",
-      "username": "Oldhop",
-      "description": "Recycle armor, tools and weapons back into raw materials using a crafting table",
-      "iconUrl": "https://cdn.modrinth.com/data/Xms0OSoE/0db5c495c7649f08c40e6cdf9dff3802d71cbe43_96.webp",
-      "status": "approved",
-      "downloads": 20,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "utility"
-      ],
-      "license": "MIT",
-      "published": "2026-03-31T14:44:14.216519Z",
-      "approved": "2026-04-01T06:32:42.115074Z",
-      "updated": "2026-03-31T16:54:40.763514Z",
-      "url": "https://modrinth.com/datapack/break-it-down"
+      "username": "Oldhop"
     },
     {
       "slug": "quiet-endermen",
       "title": "Quiet Endermen",
-      "username": "Oldhop",
-      "description": "Endermen no longer pick up or place blocks. They stay fully hostile otherwise.",
-      "iconUrl": "https://cdn.modrinth.com/data/iL6rCRdw/3c6f7e031d4d8cdeb30c9059a91bdd1f05cf756c_96.webp",
-      "status": "approved",
-      "downloads": 1,
-      "followers": 0,
-      "categories": [
-        "utility"
-      ],
-      "license": "MIT",
-      "published": "2026-04-21T18:31:19.368599Z",
-      "approved": "2026-04-22T02:27:44.526343Z",
-      "updated": "2026-04-21T18:37:08.553350Z",
-      "url": "https://modrinth.com/datapack/quiet-endermen"
+      "username": "Oldhop"
     },
     {
       "slug": "elytra-recipe-dp",
       "title": "Elytra Recipe",
-      "username": "Oldhop",
-      "description": "Adds an expensive crafting recipe for the Elytra.",
-      "iconUrl": "https://cdn.modrinth.com/data/dqxqwmAQ/b28cca31179acb96964d699d1a8a00d51c99a3e7_96.webp",
-      "status": "approved",
-      "downloads": 2,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "transportation"
-      ],
-      "license": "MIT",
-      "published": "2026-04-23T11:12:48.127458Z",
-      "approved": "2026-04-24T01:12:02.585487Z",
-      "updated": "2026-04-23T11:12:49.467038Z",
-      "url": "https://modrinth.com/datapack/elytra-recipe-dp"
+      "username": "Oldhop"
     },
     {
       "slug": "craftable-cobweb-dp",
       "title": "Craftable Cobweb",
-      "username": "Oldhop",
-      "description": "Craft cobwebs from string. Simple and useful for builders.",
-      "iconUrl": "https://cdn.modrinth.com/data/igf8dLhI/c6d5d84486437f86bb66fc2eae2eef85f12d7cd6_96.webp",
-      "status": "approved",
-      "downloads": 1,
-      "followers": 0,
-      "categories": [
-        "decoration",
-        "utility"
-      ],
-      "license": "Unlicense",
-      "published": "2026-04-23T11:13:20.159014Z",
-      "approved": "2026-04-24T00:55:55.000733Z",
-      "updated": "2026-04-23T11:13:21.254950Z",
-      "url": "https://modrinth.com/datapack/craftable-cobweb-dp"
+      "username": "Oldhop"
     },
     {
       "slug": "mob-drops-rebalance-dp",
       "title": "Mob Drops Rebalance",
-      "username": "Oldhop",
-      "description": "Slightly generous drop rates for Blazes, Ghasts and Phantoms.",
-      "iconUrl": "https://cdn.modrinth.com/data/TfJGzuWZ/b853db865e2b672db1b556bef99f0d2b812af67a_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "game-mechanics",
-        "mobs"
-      ],
-      "license": "Apache-2.0",
-      "published": "2026-04-26T20:02:37.381681Z",
-      "approved": "2026-04-26T21:36:55.543602Z",
-      "updated": "2026-04-26T20:02:38.518627Z",
-      "url": "https://modrinth.com/datapack/mob-drops-rebalance-dp"
+      "username": "Oldhop"
     },
     {
       "slug": "lanterns-from-torches",
-      "username": "Oldhop",
-      "status": "error",
-      "error": "HTTP Error 404: Not Found",
-      "url": "https://modrinth.com/datapack/lanterns-from-torches"
+      "title": "lanterns-from-torches",
+      "username": "Oldhop"
     },
     {
       "slug": "classic-enchanted-apples",
       "title": "Classic Enchanted Apples",
-      "username": "NexaCraft",
-      "description": "Restores the pre-1.9 crafting recipe for enchanted golden apples.",
-      "iconUrl": "https://cdn.modrinth.com/data/wOQfiocG/f05d6c1d2b533a67cb45577ebfa0d00e694a5739_96.webp",
-      "status": "approved",
-      "downloads": 1,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "food"
-      ],
-      "license": "MIT",
-      "published": "2026-04-21T20:34:58.528063Z",
-      "approved": "2026-04-22T02:30:36.599444Z",
-      "updated": "2026-04-21T20:36:10.279987Z",
-      "url": "https://modrinth.com/datapack/classic-enchanted-apples"
+      "username": "NexaCraft"
     },
     {
       "slug": "saddlecraft",
       "title": "Saddle Recipe",
-      "username": "NexaCraft",
-      "description": "Craft saddles from leather, iron and string.",
-      "iconUrl": "https://cdn.modrinth.com/data/u8yxdETl/3b743ab24265e624bd1ca3d92fde782d4250419a_96.webp",
-      "status": "approved",
-      "downloads": 2,
-      "followers": 0,
-      "categories": [
-        "transportation",
-        "utility"
-      ],
-      "license": "CC0-1.0",
-      "published": "2026-04-22T18:45:53.974162Z",
-      "approved": "2026-04-24T01:00:47.511642Z",
-      "updated": "2026-04-22T18:59:00.935497Z",
-      "url": "https://modrinth.com/datapack/saddlecraft"
+      "username": "NexaCraft"
     },
     {
       "slug": "silk-spawners-dp",
       "title": "Silk Spawners",
-      "username": "NexaCraft",
-      "description": "Mob spawners drop themselves when mined with silk touch.",
-      "iconUrl": "https://cdn.modrinth.com/data/5YOnkObL/3b55019fa2a05b561e181ce3921eae36965c2e18_96.webp",
-      "status": "approved",
-      "downloads": 3,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "game-mechanics"
-      ],
-      "license": "LGPL-3.0-only",
-      "published": "2026-04-22T19:03:55.158336Z",
-      "approved": "2026-04-24T01:00:59.598401Z",
-      "updated": "2026-04-22T19:06:09.642893Z",
-      "url": "https://modrinth.com/datapack/silk-spawners-dp"
+      "username": "NexaCraft"
     },
     {
       "slug": "copper-exchange-dp",
       "title": "Copper Exchange",
-      "username": "NexaCraft",
-      "description": "Exchange copper ingots for iron ingots and vice versa.",
-      "iconUrl": "https://cdn.modrinth.com/data/GCt8mEbb/1cb244faadb0b5faede4b35e3503b6660b27e405_96.webp",
-      "status": "approved",
-      "downloads": 2,
-      "followers": 0,
-      "categories": [
-        "economy",
-        "equipment"
-      ],
-      "license": "Unlicense",
-      "published": "2026-04-26T21:07:57.529999Z",
-      "approved": "2026-04-26T21:40:04.918149Z",
-      "updated": "2026-04-26T21:07:58.641852Z",
-      "url": "https://modrinth.com/datapack/copper-exchange-dp"
+      "username": "NexaCraft"
     },
     {
       "slug": "froglight-crafting-dp",
       "title": "Froglight Crafting",
-      "username": "NexaCraft",
-      "description": "Crafting recipes for the three froglight colors using glowstone and dye.",
-      "iconUrl": "https://cdn.modrinth.com/data/mWBT9GW2/c5311454dd88da5412a0cb10f76a94f44a4ff2ae_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "decoration",
-        "utility"
-      ],
-      "license": "Apache-2.0",
-      "published": "2026-04-26T21:09:58.681921Z",
-      "approved": "2026-04-26T21:42:03.426566Z",
-      "updated": "2026-04-26T21:09:59.742222Z",
-      "url": "https://modrinth.com/datapack/froglight-crafting-dp"
+      "username": "NexaCraft"
     },
     {
       "slug": "name-tag-recipe-dp",
       "title": "Name Tag Recipe",
-      "username": "PixelForged",
-      "description": "Adds a simple crafting recipe for name tags.",
-      "iconUrl": "https://cdn.modrinth.com/data/lZAYUhbs/959369c26f0edf9af0f4eca1ee02297ead97cc25_96.webp",
-      "status": "approved",
-      "downloads": 1,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "utility"
-      ],
-      "license": "Unlicense",
-      "published": "2026-04-22T20:01:38.440053Z",
-      "approved": "2026-04-24T01:02:06.323816Z",
-      "updated": "2026-04-22T20:02:42.229188Z",
-      "url": "https://modrinth.com/datapack/name-tag-recipe-dp"
+      "username": "PixelForged"
     },
     {
       "slug": "horse-armor-recipes",
-      "username": "PixelForged",
-      "status": "error",
-      "error": "HTTP Error 404: Not Found",
-      "url": "https://modrinth.com/datapack/horse-armor-recipes"
+      "title": "horse-armor-recipes",
+      "username": "PixelForged"
     },
     {
       "slug": "bundle-upgrade-dp",
       "title": "Bundle Upgrade",
-      "username": "PixelForged",
-      "description": "Cheaper alternative recipe for bundles using string and leather.",
-      "iconUrl": "https://cdn.modrinth.com/data/3NFUeQf2/3ffd5f97711401c37b1f4f02d3e23899663bfc83_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "storage",
-        "utility"
-      ],
-      "license": "LGPL-3.0-only",
-      "published": "2026-04-26T20:13:32.188800Z",
-      "approved": "2026-04-26T21:38:59.947025Z",
-      "updated": "2026-04-26T20:13:33.327060Z",
-      "url": "https://modrinth.com/datapack/bundle-upgrade-dp"
+      "username": "PixelForged"
     },
     {
       "slug": "craftable-glow-sac",
       "title": "Craftable Glow Sac",
-      "username": "PixelForged",
-      "description": "Craft glow ink sacs from an ink sac and glowstone dust.",
-      "iconUrl": "https://cdn.modrinth.com/data/WBPBbWUl/9541fbb77563651ebfa79ea08f270a7755ee22a2_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "decoration",
-        "equipment"
-      ],
-      "license": "MIT",
-      "published": "2026-04-26T20:14:39.701611Z",
-      "approved": "2026-04-26T21:37:32.636517Z",
-      "updated": "2026-04-26T20:14:40.753363Z",
-      "url": "https://modrinth.com/datapack/craftable-glow-sac"
+      "username": "PixelForged"
     },
     {
       "slug": "chainmail-recipes",
       "title": "Chainmail Recipes",
-      "username": "KiraVoxel",
-      "description": "Adds crafting recipes for chainmail armor using iron nuggets.",
-      "iconUrl": "https://cdn.modrinth.com/data/dZihTzis/c4e1d7a5e9384be02419ef8e46569ecc4c7c58ea_96.webp",
-      "status": "approved",
-      "downloads": 1,
-      "followers": 0,
-      "categories": [
-        "equipment",
-        "utility"
-      ],
-      "license": "MIT",
-      "published": "2026-04-23T08:29:49.886403Z",
-      "approved": "2026-04-24T01:11:48.537180Z",
-      "updated": "2026-04-23T08:29:50.948095Z",
-      "url": "https://modrinth.com/datapack/chainmail-recipes"
+      "username": "KiraVoxel"
     },
     {
       "slug": "decorative-end-rods",
       "title": "Decorative End Rods",
-      "username": "KiraVoxel",
-      "description": "Easier crafting recipe for end rods using popped chorus fruit and blaze rod.",
-      "iconUrl": "https://cdn.modrinth.com/data/xoNReW1J/8ec9071d909797ef40b225d26e8fb9bd2704b969_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "decoration",
-        "equipment"
-      ],
-      "license": "CC0-1.0",
-      "published": "2026-04-26T21:48:03.682822Z",
-      "approved": "2026-04-27T01:04:20.986034Z",
-      "updated": "2026-04-26T21:48:04.698930Z",
-      "url": "https://modrinth.com/datapack/decorative-end-rods"
+      "username": "KiraVoxel"
     },
     {
       "slug": "prismarine-pack-dp",
       "title": "Prismarine Pack",
-      "username": "KiraVoxel",
-      "description": "Craft prismarine shards and crystals without visiting an ocean monument.",
-      "iconUrl": "https://cdn.modrinth.com/data/2xhtG70L/c5c42f40e59e12ac2b740957305b126a2a349394_96.webp",
-      "status": "approved",
-      "downloads": 0,
-      "followers": 0,
-      "categories": [
-        "decoration",
-        "equipment"
-      ],
-      "license": "MIT",
-      "published": "2026-04-26T21:49:09.923514Z",
-      "approved": "2026-04-27T01:02:53.901183Z",
-      "updated": "2026-04-26T21:49:10.992829Z",
-      "url": "https://modrinth.com/datapack/prismarine-pack-dp"
+      "username": "KiraVoxel"
     },
     {
       "slug": "diamond-apple-dp",
-      "username": "extamorzen",
-      "status": "error",
-      "error": "HTTP Error 404: Not Found",
-      "url": "https://modrinth.com/datapack/diamond-apple-dp"
+      "title": "diamond-apple-dp",
+      "username": "extamorzen"
     },
     {
       "slug": "sponge-recipe-dp",
-      "username": "extamorzen",
-      "status": "error",
-      "error": "HTTP Error 404: Not Found",
-      "url": "https://modrinth.com/datapack/sponge-recipe-dp"
+      "title": "sponge-recipe-dp",
+      "username": "extamorzen"
     }
   ]
 }
