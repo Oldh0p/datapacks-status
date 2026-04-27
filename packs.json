@@ -20,6 +20,8 @@
     { "slug": "decorative-end-rods",      "title": "Decorative End Rods",      "username": "KiraVoxel" },
     { "slug": "prismarine-pack-dp",       "title": "Prismarine Pack",          "username": "KiraVoxel" },
     { "slug": "diamond-apple-dp",         "title": "Diamond Apple",            "username": "extamorzen" },
-    { "slug": "sponge-recipe-dp",         "title": "Sponge Recipe",            "username": "extamorzen" }
+    { "slug": "sponge-recipe-dp",         "title": "Sponge Recipe",            "username": "extamorzen" },
+    { "slug": "better-fishing-dp",        "title": "Better Fishing",           "username": "Zephyros" },
+    { "slug": "coal-compressor-dp",       "title": "Coal Compressor",          "username": "Zephyros" }
   ]
 }
