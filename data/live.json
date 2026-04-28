@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T01:51:19.763176+00:00",
+  "lastUpdated": "2026-04-28T05:21:43.381998+00:00",
   "packs": [
     {
       "slug": "break-it-down",
@@ -80,6 +80,21 @@
       "slug": "prismarine-pack-dp",
       "title": "Prismarine Pack",
       "username": "KiraVoxel"
+    },
+    {
+      "slug": "better-fishing-dp",
+      "title": "Better Fishing",
+      "username": "Zephyros"
+    },
+    {
+      "slug": "coal-compressor-dp",
+      "title": "Coal Compressor",
+      "username": "Zephyros"
+    },
+    {
+      "slug": "stick-multiplier-dp",
+      "title": "Stick Multiplier",
+      "username": "antonio75"
     }
   ]
 }
